@@ -1,0 +1,45 @@
+Installation
+============
+
+1. Backup your .vimrc file and .vim directory
+
+2. In your home, do:
+
+	git clone git://github.com/txusty/vim-rails.config.git .vim
+	
+	ln -s .vim/vimrc .vimrc
+
+        And if you like gvim:
+
+	ln -s .vim/gvimrc .gvimrc
+
+3. Enjoy!
+
+Cheatsheet
+==========
+
+(<leader> is ',')
+
+Custom Mappings
+---------------
+
+<leader> p - Toggle NERDtree project explorer
+<leader> t - FuzzyFinderTextMate
+<leader> b - Explore open buffers in FuzzyFinderTextMate
+F5 - Reload FuzzyFinder tree
+<leader> tl - Toggle Tag List
+<Control> v - Paste from outside VIM
+<Control> s - Save
+
+VIM Grep
+--------
+
+:lvim /string_to_search/g **/*.extension
+:lw - Rotate among results
+
+Misc
+---------
+:(range)s/old/new/g - Search and replace
+  Example: :%s/old/new/g
+           :10,30s/old/new/g
+
