@@ -75,6 +75,7 @@ let g:speckyRunRdocCmd = "fri -L -f plain"
 
 set number
 set hlsearch
+set ruler
 
 "Adding #{} to AutoClose Plugin and activating it for String interpolation
 let g:AutoClosePairs = {'(': ')', '{': '}', '[': ']', '"': '"', "'": "'", '#{': '}'} 
