@@ -145,6 +145,8 @@ set ignorecase
 set guifont=*
 set guifont=Monaco\ 10
 
+set background=dark
+
 " Interactive Mediums specific commands
 autocmd User Rails Rnavcommand jobs app/jobs
 autocmd User Rails Rnavcommand daemons app/daemons
