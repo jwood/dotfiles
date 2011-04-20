@@ -7,7 +7,7 @@ export EDITOR=/usr/bin/vim
 export EVENT_NOKQUEUE=yes
 export GREP_OPTIONS='--color=auto'
 
-export PATH=/opt/local/lib/postgresql83/bin:/opt/local/bin:/opt/local/sbin:/Users/jwood/bin:/usr/local/mysql/bin:$ANDROID_HOME/tools:$PATH
+export PATH=/usr/local/bin:/usr/local/riak/bin:/opt/local/lib/postgresql83/bin:/usr/local/mongodb/bin:/opt/local/bin:/opt/local/sbin:/usr/local/sbin:/Users/jwood/bin:/usr/local/mysql/bin:$ANDROID_HOME/tools:$PATH
 export PATH="/Library/Frameworks/Python.framework/Versions/2.6/bin:${PATH}"
 
 test -r /sw/bin/init.sh && . /sw/bin/init.sh
@@ -21,6 +21,11 @@ alias vim-cheatsheet='less ~/vim-cheatsheet.txt'
 alias dns-flush='dscacheutil -flushcache'
 
 complete -d cd rmdir
+
+# CouchDB
+alias restart_couch='/usr/bin/sudo launchctl stop org.apache.couchdb'
+alias start_couch='/usr/bin/sudo launchctl load -w ~/Library/LaunchAgents/org.apache.couchdb.plist'
+alias stop_couch='/usr/bin/sudo launchctl unload ~/Library/LaunchAgents/org.apache.couchdb.plist'
 
 # Add git branch to prompt
 function parse_git_branch {
