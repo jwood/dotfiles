@@ -128,7 +128,7 @@ nmap <C-s> :w!<CR>
 command -bar -nargs=1 OpenURL :!sensible-browser <args>
 
 "Allow switching buffers without writing to disk
-set hidden
+" set hidden
 
 " Set incremental search
 set incsearch
