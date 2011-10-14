@@ -1,5 +1,6 @@
 export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Home
 export ANDROID_HOME=/opt/android
+export POW_USER=true
 
 export DISPLAY=:0.0
 export TERM=xterm-color
@@ -19,8 +20,11 @@ alias ll='ls -al'
 alias notes='less ~/notes.txt'
 alias vim-cheatsheet='less ~/vim-cheatsheet.txt'
 alias dns-flush='dscacheutil -flushcache'
+alias be='bundle exec'
 
 complete -d cd rmdir
+
+alias be='bundle exec'
 
 # CouchDB
 alias restart_couch='/usr/bin/sudo launchctl stop org.apache.couchdb'
