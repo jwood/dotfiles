@@ -1,3 +1,4 @@
+call pathogen#infect()
 "Set leader key
 let mapleader = ","
 filetype on  " Automatically detect file types.
