@@ -16,7 +16,7 @@ test -r /sw/bin/init.sh && . /sw/bin/init.sh
 source /usr/local/git/contrib/completion/git-completion.bash
 source ~/.alias_machines
 
-alias ll='ls -al'
+alias ll='ls -l'
 alias notes='less ~/notes.txt'
 alias vim-cheatsheet='less ~/vim-cheatsheet.txt'
 alias dns-flush='dscacheutil -flushcache'
