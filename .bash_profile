@@ -7,7 +7,7 @@ export EDITOR=/usr/bin/vim
 export EVENT_NOKQUEUE=yes
 export GREP_OPTIONS='--color=auto'
 
-export PATH=/usr/local/bin:/usr/local/riak/bin:/opt/local/lib/postgresql83/bin:/usr/local/mongodb/bin:/opt/local/bin:/opt/local/sbin:/usr/local/sbin:~/bin:/usr/local/mysql/bin:$ANDROID_HOME/tools:$PATH
+export PATH=/usr/local/bin:/usr/local/riak/bin:/opt/local/lib/postgresql83/bin:/usr/local/mongodb/bin:/opt/local/bin:/opt/local/sbin:/opt/ree/bin:/usr/local/sbin:~/bin:/usr/local/mysql/bin:$ANDROID_HOME/tools:$PATH
 export PATH="/Library/Frameworks/Python.framework/Versions/2.6/bin:${PATH}"
 
 test -r /sw/bin/init.sh && . /sw/bin/init.sh
