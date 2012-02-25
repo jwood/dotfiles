@@ -21,6 +21,7 @@ alias notes='less ~/notes.txt'
 alias vim-cheatsheet='less ~/vim-cheatsheet.txt'
 alias dns-flush='dscacheutil -flushcache'
 alias be='bundle exec'
+alias suite='bundle exec rake db:migrate parallel:prepare[2] parallel:suite'
 
 complete -d cd rmdir
 

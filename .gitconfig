@@ -3,8 +3,8 @@
     status = auto
     branch = auto
 [user]
-    name = John Wood
-    email = john@signalhq.com
+	name = John Wood
+	email = john@johnpwood.net
 [alias]
     co = checkout
     ci = commit
