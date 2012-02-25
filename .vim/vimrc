@@ -40,6 +40,15 @@ set shiftwidth=2  " Tabs under smart indent
 set expandtab
 
 
+" Clojure
+"
+let vimclojure#HighlightBuiltins=1
+"let vimclojure#HighlightContrib=1
+"let vimclojure#DynamicHighlighting=1
+let vimclojure#ParenRainbow=1
+"let vimclojure#WantNailgun = 1
+"let vimclojure#NailgunClient = vimclojureRoot."/lib/nailgun/ng""
+
 " NERDTree
 "
 let NERDTreeShowBookmarks  = 1
