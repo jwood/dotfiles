@@ -35,6 +35,8 @@ function parse_git_branch {
   git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
 }
 
+source ~/.project_aurora
+
 function proml {
   PS1="[\w\$(parse_git_branch)] \$ "
   PS2='> '
