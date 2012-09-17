@@ -25,8 +25,6 @@ alias suite='bundle exec rake db:migrate parallel:prepare[2] parallel:suite'
 
 complete -d cd rmdir
 
-alias be='bundle exec'
-
 # CouchDB
 alias restart_couch='/usr/bin/sudo launchctl stop org.apache.couchdb'
 alias start_couch='/usr/bin/sudo launchctl load -w ~/Library/LaunchAgents/org.apache.couchdb.plist'
