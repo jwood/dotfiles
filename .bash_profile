@@ -1,4 +1,5 @@
 export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Home
+export CLASSPATH=/opt/clojure-1.3.0/clojure-1.3.0.jar
 export ANDROID_HOME=/opt/android
 export POW_USER=true
 
