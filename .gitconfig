@@ -10,7 +10,7 @@
     ci = commit
     topush = log origin/master..
 [core]
-    excludesfile = /Users/jwood/.gitignore
+    excludesfile = /Users/john.wood/.gitignore
     whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
 [color "branch"]
     current = yellow reverse

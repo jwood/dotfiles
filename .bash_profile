@@ -15,7 +15,7 @@ export PATH="/Library/Frameworks/Python.framework/Versions/2.6/bin:${PATH}"
 test -r /sw/bin/init.sh && . /sw/bin/init.sh
 
 source /usr/local/git/contrib/completion/git-completion.bash
-source ~/.alias_machines
+#source ~/.alias_machines
 
 alias ll='ls -l'
 alias notes='less ~/notes.txt'
@@ -36,7 +36,7 @@ function parse_git_branch {
   git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
 }
 
-source ~/.project_aurora
+#source ~/.project_aurora
 
 function proml {
   PS1="[\w\$(parse_git_branch)] \$ "
