@@ -148,3 +148,9 @@ autocmd User Rails Rnavcommand daemons app/daemons
 autocmd User Rails Rnavcommand csupport app/controller_support
 autocmd User Rails Rnavcommand -suffix=.less less app/stylesheets
 
+" Centro specific commands
+autocmd User Rails Rnavcommand observers app/observers
+autocmd User Rails Rnavcommand clients app/clients
+
+au BufRead,BufNewFile *.rabl setf ruby
+
