@@ -30,8 +30,7 @@ set incsearch " Set incremental search
 set title " Set terminal title to filename
 set smartcase
 set ignorecase
-set guifont=*
-set guifont=Monaco\ 10
+set guifont=Menlo\ Regular:h13
 set background=dark
 
 " Minibuffer Explorer Settings
