@@ -3,9 +3,9 @@ ZSH=$HOME/.oh-my-zsh
 
 
 POW_USER=true
-EDITOR=/usr/bin/vim
+export EDITOR=/usr/bin/vim
 
-#source ~/.alias_machines
+source ~/.alias_machines
 #source ~/.project_aurora
 
 alias ll='ls -l'
@@ -54,7 +54,7 @@ plugins=(brew cap gem git github heroku osx pow rails3 rake ruby)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=/Users/john.wood/.rvm/gems/ruby-1.9.3-p0@aurora/bin:/Users/john.wood/.rvm/gems/ruby-1.9.3-p0@global/bin:/Users/john.wood/.rvm/rubies/ruby-1.9.3-p0/bin:/Users/john.wood/.rvm/bin:/Library/Frameworks/Python.framework/Versions/2.6/bin:/usr/local/bin:/usr/local/riak/bin:/opt/local/lib/postgresql83/bin:/usr/local/mongodb/bin:/opt/local/bin:/opt/local/sbin:/opt/ree/bin:/usr/local/sbin:/Users/john.wood/bin:/usr/local/mysql/bin:/opt/android/tools:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin
+export PATH=/usr/local/bin:/usr/local/sbin:/Users/john.wood/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/john.wood/.rbenv/shims
 
 #PROMPT='%{$fg[cyan]%}%~ %{$fg_bold[blue]%}$(parse_git_branch)%{$fg_bold[blue]%} % %{$reset_color%}'
 PROMPT='%{$fg[cyan]%}%~ %{$fg_bold[blue]%}$(git_prompt_info)%{$fg_bold[blue]%} % %{$reset_color%}'
@@ -63,5 +63,9 @@ PROMPT='%{$fg[cyan]%}%~ %{$fg_bold[blue]%}$(git_prompt_info)%{$fg_bold[blue]%} %
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+export ADD_TRACKER_ID_TO_COMMIT_MESSAGE=true
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+ssh-add ~/.ssh/id_rsa
+
