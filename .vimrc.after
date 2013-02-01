@@ -1,3 +1,5 @@
 set guifont=Menlo\ Regular:h13
 set background=dark
 colorscheme vividchalk
+
+autocmd FileType c,cpp,java,php,js,ruby,haml,html,css,scss,sass autocmd BufWritePre <buffer> :%s/\s\+$//e
