@@ -29,3 +29,7 @@
     tool = opendiff
 [github]
 	user = jwood
+[push]
+	default = simple
+[heroku]
+	account = work

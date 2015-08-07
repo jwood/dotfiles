@@ -54,18 +54,23 @@ plugins=(bundler cap gem git github heroku osx rake)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=/usr/local/bin:/usr/local/sbin:/Users/john.wood/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/john.wood/.rbenv/shims
+export PATH=/usr/local/bin:/usr/local/sbin:/Users/johnwood/bin:/usr/bin:/bin:/usr/sbin:/sbin
+#:/Users/johnwood/.rbenv/shims:/Users/johnwood/.rbenv/bin
 
 #PROMPT='%{$fg[cyan]%}%~ %{$fg_bold[blue]%}$(parse_git_branch)%{$fg_bold[blue]%} % %{$reset_color%}'
 PROMPT='%{$fg[cyan]%}%~ %{$fg_bold[blue]%}$(git_prompt_info)%{$fg_bold[blue]%} % %{$reset_color%}'
-
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 export ADD_TRACKER_ID_TO_COMMIT_MESSAGE=true
 
+export RBENV_ROOT=/usr/local/var/rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+export CAPYBARA_WAIT_TIME=5
+export DEVISE_TIMEOUT_IN=86400
+export PARALLEL_TESTS=true
+export PARALLEL_TEST_PROCESSORS=7
 
 ssh-add ~/.ssh/id_rsa
 
